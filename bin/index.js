@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { execSync } from 'node:child_process'
 import { fileURLToPath } from "node:url"
 import path from "node:path"

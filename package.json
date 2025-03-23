@@ -1,12 +1,13 @@
 {
   "name": "create-genkitx",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-genkitx": "index.js"
+    "create-genkitx": "bin/index.js"
   },
   "keywords": [
     "genkit",
@@ -15,7 +16,15 @@
   "author": "tanabee",
   "license": "MIT",
   "description": "Genkit project generator",
-  "devDependencies": {
+  "dependencies": {
     "prompts": "^2.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanabee/create-genkitx.git"
+  },
+  "homepage": "https://github.com/tanabee/create-genkitx#readme",
+  "bugs": {
+    "url": "https://github.com/tanabee/create-genkitx/issues"
   }
 }
