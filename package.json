@@ -1,0 +1,21 @@
+{
+  "name": "create-genkitx",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-genkitx": "index.js"
+  },
+  "keywords": [
+    "genkit",
+    "firebase"
+  ],
+  "author": "tanabee",
+  "license": "MIT",
+  "description": "Genkit project generator",
+  "devDependencies": {
+    "prompts": "^2.4.2"
+  }
+}
