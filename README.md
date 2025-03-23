@@ -32,7 +32,9 @@ For local development and testing of this package, follow these steps:
 # Run this in the project root directory
 npm link
 
-# This will install the create-genkitx package globally
-# Then you can test it by running
+# Navigate to the directory where you want to test the package
+cd /path/to/test/directory
+
+# Run the linked package
 npx create-genkitx
 ```
