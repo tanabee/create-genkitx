@@ -1,6 +1,6 @@
 {
   "name": "genkit-flow-server-template",
-  "version": "0.0.1",
+  "version": "0.0.12",
   "author": "tanabee",
   "scripts": {
     "start": "genkit start -o -- npx tsx --watch src/index.ts"
@@ -10,5 +10,8 @@
     "@genkit-ai/googleai": "1.x",
     "genkit": "1.x",
     "genkit-cli": "1.x"
+  },
+  "bugs": {
+    "url": "https://github.com/tanabee/create-genkitx/issues"
   }
 }
