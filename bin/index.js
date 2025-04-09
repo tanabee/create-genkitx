@@ -11,11 +11,29 @@ const templates = [
     value: "command-line",
     title: "Command Line",
     description: "This is a Command Line template",
+    installationCommands: [
+      'export GEMINI_API_KEY=<your-api-key>',
+      'npm start'
+    ],
   },
   {
     value: "flow-server",
     title: "Flow Server",
     description: "This is a Flow Server template",
+    installationCommands: [
+      'export GEMINI_API_KEY=<your-api-key>',
+      'npm start'
+    ],
+  },
+  {
+    value: "mcp",
+    title: "MCP",
+    description: "This is a MCP template",
+    installationCommands: [
+      'echo "GEMINI_API_KEY=<your-api-key>" > .env',
+      'echo "GITHUB_PERSONAL_ACCESS_TOKEN=<your-github-personal-access-token>" >> .env',
+      'npm start'
+    ],
   }
 ]
 
@@ -61,7 +79,9 @@ const renamePackageJsonName = async (targetDir, projectName) => {
       console.log(`✅ Project "${projectName}" has been successfully generated\n`)
       console.log('You can start your project with the following commands:')
       console.log(`cd ${projectName}`)
-      console.log('npm start')
+      for (const command of templates.find(t => t.value === template).installationCommands) {
+        console.log(command)
+      }
       console.log('Enjoy building with Genkit! 👍\n')
     } else {
       throw new Error("Target directory already exists!\nPlease choose another name or delete the existing directory.")
