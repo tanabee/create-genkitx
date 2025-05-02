@@ -36,5 +36,5 @@ npm link
 cd /path/to/test/directory
 
 # Run the linked package
-npx create-genkitx
+npm create genkitx
 ```
