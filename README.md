@@ -10,15 +10,6 @@ Create a new Genkit project by running the following command:
 npm create genkitx
 ```
 
-## Getting Started
-
-After generating your project, you can navigate to the project directory and start the application with the following commands:
-
-```bash
-cd <project-name>
-npm start
-```
-
 ## Requirements
 
 - Node.js 20 or higher

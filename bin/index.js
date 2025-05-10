@@ -8,18 +8,9 @@ import prompts from "prompts"
 
 const templates = [
   {
-    value: "command-line",
-    title: "Command Line",
-    description: "This is a Command Line template",
-    installationCommands: [
-      'export GEMINI_API_KEY=<your-api-key>',
-      'npm start'
-    ],
-  },
-  {
-    value: "flow-server",
-    title: "Flow Server",
-    description: "This is a Flow Server template",
+    value: "minimal",
+    title: "Minimal",
+    description: "This is a Minimal template",
     installationCommands: [
       'export GEMINI_API_KEY=<your-api-key>',
       'npm start'
