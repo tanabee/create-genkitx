@@ -17,6 +17,19 @@ const templates = [
     ],
   },
   {
+    value: "vertexai",
+    title: "VertexAI",
+    description: "This is a VertexAI template",
+    installationCommands: [
+      'echo "GCLOUD_PROJECT=<your-gcloud-project>" > .env',
+      'echo "GCLOUD_LOCATION=<your-gcloud-location>" >> .env',
+      'gcloud auth application-default login',
+      'npm start',
+      'Check the docs if you run into any problems:',
+      'https://genkit.dev/docs/plugins/vertex-ai',
+    ],
+  },
+  {
     value: "mcp",
     title: "MCP",
     description: "This is a MCP template",
@@ -63,7 +76,7 @@ const renamePackageJsonName = async (targetDir, projectName) => {
 
     if (!fs.existsSync(targetDir)) {
       fs.mkdirSync(targetDir, { recursive: true })
-      execSync(`cp -r ${sourceDir}/* ${targetDir}`, { stdio: 'inherit' })
+      fs.cpSync(sourceDir, targetDir, { recursive: true })
       await renamePackageJsonName(targetDir, projectName)
       execSync('npm install', { cwd: projectName, stdio: 'inherit' })
       

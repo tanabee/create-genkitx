@@ -1,11 +1,18 @@
 import { genkit, z } from 'genkit'
-import { googleAI, gemini25FlashPreview0417 } from '@genkit-ai/googleai'
+import { vertexAI, gemini25FlashPreview0417 } from '@genkit-ai/vertexai'
 import { startFlowServer } from '@genkit-ai/express'
 import { logger } from 'genkit/logging'
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 logger.setLogLevel('debug')
 
 const ai = genkit({
-  plugins: [googleAI()],
+  plugins: [vertexAI({
+    projectId: process.env.GCLOUD_PROJECT!,
+    location: process.env.GCLOUD_LOCATION!,
+  })],
   model: gemini25FlashPreview0417,
 })
 

@@ -1,6 +1,6 @@
 import { genkit, z } from 'genkit'
 import { startFlowServer } from '@genkit-ai/express'
-import { gemini20Flash, googleAI } from '@genkit-ai/googleai'
+import { gemini25FlashPreview0417, googleAI } from '@genkit-ai/googleai'
 import { mcpClient } from 'genkitx-mcp'
 import dotenv from 'dotenv'
 
@@ -20,7 +20,7 @@ const ai = genkit({
     githubClient,
     googleAI(),
   ],
-  model: gemini20Flash,
+  model: gemini25FlashPreview0417,
 })
 
 const mainFlow = ai.defineFlow({
