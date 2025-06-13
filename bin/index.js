@@ -38,6 +38,12 @@ const templates = [
       'echo "GITHUB_PERSONAL_ACCESS_TOKEN=<your-github-personal-access-token>" >> .env',
       'npm start'
     ],
+  },
+  {
+    value: "firebase",
+    title: "Firebase",
+    description: "This is a Firebase template",
+    installationCommands: []
   }
 ]
 
@@ -81,10 +87,15 @@ const renamePackageJsonName = async (targetDir, projectName) => {
       execSync('npm install', { cwd: projectName, stdio: 'inherit' })
       
       console.log(`✅ Project "${projectName}" has been successfully generated\n`)
-      console.log('You can start your project with the following commands:')
-      console.log(`cd ${projectName}`)
-      for (const command of templates.find(t => t.value === template).installationCommands) {
-        console.log(command)
+      if (templates.find(t => t.value === template).installationCommands.length > 0) {
+        console.log('You can start your project with the following commands:')
+        console.log(`cd ${projectName}`)
+        for (const command of templates.find(t => t.value === template).installationCommands) {
+          console.log(command)
+        }
+      } else {
+        console.log(`cd ${projectName}`)
+        console.log('See README.md for setup instructions.')
       }
       console.log('Enjoy building with Genkit! 👍\n')
     } else {

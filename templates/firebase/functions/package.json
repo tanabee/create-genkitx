@@ -1,0 +1,27 @@
+{
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "genkit:start": "genkit start -o --port 1234 -- tsx --watch src/genkit.ts"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@genkit-ai/firebase": "1.x",
+    "@genkit-ai/googleai": "1.x",
+    "express": "5.x",
+    "firebase-admin": "12.x",
+    "firebase-functions": "6.x",
+    "genkit": "1.x"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "3.x",
+    "genkit-cli": "1.x",
+    "typescript": "5.x"
+  },
+  "private": true,
+  "version": "0.0.15"
+}

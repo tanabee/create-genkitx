@@ -1,6 +1,6 @@
 {
   "name": "genkit-flow-server-template",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "author": "tanabee",
   "scripts": {
     "start": "genkit start -o -- npx tsx --watch src/index.ts"

@@ -1,0 +1,19 @@
+{
+  "name": "demo-genkit",
+  "version": "0.0.15",
+  "description": "",
+  "keywords": [
+    "genkit",
+    "firebase"
+  ],
+  "license": "MIT",
+  "author": "tanabee",
+  "scripts": {
+    "start": "concurrently \"npm run build:watch --prefix functions\" \"firebase emulators:start\" \"npm run genkit:start --prefix functions\"",
+    "deploy": "firebase deploy",
+    "postinstall": "npm install --prefix functions"
+  },
+  "devDependencies": {
+    "concurrently": "9.x"
+  }
+}
