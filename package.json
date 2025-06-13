@@ -1,6 +1,6 @@
 {
   "name": "create-genkitx",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "type": "module",
   "scripts": {
     "update-version": "node bin/updatePackageVersion.js"

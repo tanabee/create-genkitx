@@ -38,6 +38,8 @@ curl -i -X POST \
   'http://localhost:5001/demo-genkitx/us-central1/api/api/messages'
 ```
 
+Note: After setting the project id in the `Deploy to Firebase` section, please replace the instances of `demo-genkitx` accordingly.
+
 API Endpoint:
 
 - `POST /api/messages`
