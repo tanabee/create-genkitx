@@ -6,7 +6,7 @@ logger.setLogLevel('debug')
 
 const ai = genkit({
   plugins: [googleAI()],
-  model: googleAI.model('imagen-3.0-generate-002'),
+  model: googleAI.model('imagen-4.0-generate-preview-06-06'),
 })
 
 const mainFlow = ai.defineFlow({

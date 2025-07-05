@@ -1,6 +1,6 @@
 {
   "name": "imagen3",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "author": "tanabee",
   "scripts": {
     "start": "genkit start -o -- npx tsx --watch src/index.ts"

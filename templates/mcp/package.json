@@ -1,6 +1,6 @@
 {
   "name": "genkit-mcp-template",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "author": "tanabee",
   "scripts": {
     "start": "genkit start -o -- tsx --watch src/index.ts"
