@@ -30,6 +30,15 @@ const templates = [
     ],
   },
   {
+    value: "imagen",
+    title: "Imagen",
+    description: "This is a Imagen template",
+    installationCommands: [
+      'export GOOGLE_API_KEY=<your-api-key>',
+      'npm start'
+    ],
+  },
+  {
     value: "mcp",
     title: "MCP",
     description: "This is a MCP template",
