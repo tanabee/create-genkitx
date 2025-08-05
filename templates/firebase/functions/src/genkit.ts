@@ -1,12 +1,12 @@
 import { genkit, z } from 'genkit'
-import { googleAI, gemini25FlashPreview0417 } from '@genkit-ai/googleai'
+import { googleAI, gemini25FlashLite } from '@genkit-ai/googleai'
 import { enableFirebaseTelemetry } from '@genkit-ai/firebase'
 
 enableFirebaseTelemetry()
 
 const ai = genkit({
   plugins: [googleAI({ apiKey: process.env.GEMINI_API_KEY })],
-  model: gemini25FlashPreview0417,
+  model: gemini25FlashLite,
 })
 
 export const mainFlow = ai.defineFlow({

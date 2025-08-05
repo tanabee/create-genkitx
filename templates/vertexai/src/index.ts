@@ -1,5 +1,5 @@
 import { genkit, z } from 'genkit'
-import { vertexAI, gemini25FlashPreview0417 } from '@genkit-ai/vertexai'
+import { vertexAI, gemini25FlashLite } from '@genkit-ai/vertexai'
 import { startFlowServer } from '@genkit-ai/express'
 import { logger } from 'genkit/logging'
 import dotenv from 'dotenv'
@@ -13,7 +13,7 @@ const ai = genkit({
     projectId: process.env.GCLOUD_PROJECT!,
     location: process.env.GCLOUD_LOCATION!,
   })],
-  model: gemini25FlashPreview0417,
+  model: gemini25FlashLite,
 })
 
 const mainFlow = ai.defineFlow({
