@@ -1,12 +1,14 @@
 import { genkit, z } from 'genkit'
-import { googleAI, gemini25FlashLite } from '@genkit-ai/googleai'
+import { googleAI } from '@genkit-ai/googleai'
 import { enableFirebaseTelemetry } from '@genkit-ai/firebase'
 
 enableFirebaseTelemetry()
 
 const ai = genkit({
   plugins: [googleAI({ apiKey: process.env.GEMINI_API_KEY })],
-  model: gemini25FlashLite,
+  model: googleAI.model('gemini-2.5-flash-lite', {
+    temperature: 0.8,
+  }),
 })
 
 export const mainFlow = ai.defineFlow({
