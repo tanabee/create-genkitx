@@ -9,10 +9,10 @@
   "dependencies": {
     "@genkit-ai/express": "1.x",
     "@genkit-ai/googleai": "1.x",
+    "@genkit-ai/mcp": "1.x",
     "dotenv": "16.x",
     "genkit": "1.x",
-    "genkit-cli": "1.x",
-    "genkitx-mcp": "1.x"
+    "genkit-cli": "1.x"
   },
   "repository": {
     "type": "git",
