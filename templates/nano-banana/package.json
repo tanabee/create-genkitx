@@ -1,6 +1,6 @@
 {
   "name": "nano-banana",
-  "version": "0.0.20",
+  "version": "0.1.0",
   "author": "tanabee",
   "scripts": {
     "start": "genkit start -o -- npx tsx --watch src/index.ts"
