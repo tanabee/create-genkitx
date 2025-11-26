@@ -30,9 +30,9 @@ const templates = [
     ],
   },
   {
-    value: "imagen",
-    title: "Imagen",
-    description: "This is a Imagen template",
+    value: "nano-banana",
+    title: "Nano Banana",
+    description: "This is a Nano Banana template",
     installationCommands: [
       'export GOOGLE_API_KEY=<your-api-key>',
       'npm start'
